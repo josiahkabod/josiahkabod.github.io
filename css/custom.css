@@ -1,0 +1,11 @@
+/* Fonts
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+  font-family: 'Crimson Text', serif;
+  font-weight: 400;
+  font-size: 8rem;
+}
