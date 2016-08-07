@@ -29,8 +29,44 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="icon" type="image/png" href="images/favicon.png">
 
+  <!-- Javascript
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src="http://code.jquery.com/jquery-latest.js" type="text/javascript"></script>
+  <script src="js/isotope.pkgd.js" type="text/javascript"></script>
+
 </head>
 <body>
+
+<script type="text/javascript">
+  $(window).load(function(){
+      var $container = $('.portfolioContainer');
+      $container.isotope({
+          filter: '*',
+          animationOptions: {
+              duration: 750,
+              easing: 'linear',
+              queue: false
+          }
+      });
+
+      $('.portfolioFilter a').click(function(){
+          $('.portfolioFilter .current').removeClass('current');
+          $(this).addClass('current');
+
+          var selector = $(this).attr('data-filter');
+          $container.isotope({
+              filter: selector,
+              animationOptions: {
+                  duration: 750,
+                  easing: 'linear',
+                  queue: false
+              }
+           });
+           return false;
+      });
+  });
+
+</script>
 
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -42,8 +78,75 @@
       </div>
     </div>
     <div class="row">
-      <div class="twelve columns" style="text-align: center;">
+
+      <div class="twelve columns portfolioFilter" style="text-align: center;">
+          <a href="#" data-filter="*" class="current">All</a>
+            <a href="#" data-filter=".lightness">1</a>
+            <a href="#" data-filter=".visibility">2</a>
       </div>
+    </div>
+
+    <div class="row">
+      <div class="twelve columns portfolioContainer" style="text-align: center; height: 40%;">
+
+        <div class="lightness portfolioContainer-item">
+            <img src="images/1.jpg" alt="image" style="width:100%;">
+        </div>
+
+        <div class="visibility portfolioContainer-item">
+            <img src="images/2.jpg" alt="image" style="width:100%;">
+        </div>
+
+        <div class="lightness portfolioContainer-item">
+            <img src="images/3.jpg" alt="image" style="width:100%;">
+        </div>
+
+        <div class="visibility portfolioContainer-item">
+            <img src="images/4.jpg" alt="image" style="width:100%;">
+        </div>
+
+        <div class="lightness portfolioContainer-item">
+            <img src="images/5.jpg" alt="image" style="width:100%;">
+        </div>
+
+        <div class="visibility portfolioContainer-item">
+            <img src="images/6.jpg" alt="image" style="width:100%;">
+        </div>
+
+        <div class="lightness portfolioContainer-item">
+            <img src="images/7.jpg" alt="image" style="width:100%;">
+        </div>
+
+        <div class="visibility portfolioContainer-item">
+            <img src="images/8.jpg" alt="image" style="width:100%;">
+        </div>
+
+        <div class="lightness portfolioContainer-item">
+            <img src="images/9.jpg" alt="image" style="width:100%;">
+        </div>
+
+        <div class="visibility portfolioContainer-item">
+            <img src="images/10.jpg" alt="image" style="width:100%;">
+        </div>
+
+        <div class="lightness portfolioContainer-item">
+            <img src="images/11.jpg" alt="image" style="width:100%;">
+        </div>
+
+        <div class="visibility portfolioContainer-item">
+            <img src="images/12.jpg" alt="image" style="width:100%;">
+        </div>
+
+        <div class="lightness portfolioContainer-item">
+            <img src="images/13.jpg" alt="image" style="width:100%;">
+        </div>
+
+        <div class="visibility portfolioContainer-item">
+            <img src="images/14.jpg" alt="image" style="width:100%;">
+        </div>
+
+      </div>
+    </div>
     </div>
   </div>
 </div>
