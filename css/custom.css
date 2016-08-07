@@ -12,16 +12,12 @@ h1 {
 
 /* Isotope Stuff
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-
 .portfolioContainer-item {
   width: 31.5%;
   overflow: hidden;
-  margin: 10px;
-
-  border: 0px;
+  margin: 6px;
   padding: 10%;
   box-sizing: border-box;
-  position: relative;
 }
 
 .portfolioFilter a {
@@ -32,7 +28,8 @@ h1 {
 }
 
 .portfolioFilter a.current {
-    font-weight:bold;
+    font-weight: 700;
+    text-decoration: underline;
 }
 
 img {
@@ -40,6 +37,7 @@ img {
     position: absolute;
     top: 0;
     left: 0;
+    width: 100%;
 }
 
 .isotope-item {
