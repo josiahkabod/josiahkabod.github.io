@@ -10,12 +10,12 @@ h1 {
   font-size: 8rem;
 }
 
-/* Isotope Stuff
+/* Isotope Stuff   
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .portfolioContainer-item {
-  width: 31.5%;
+  width: 32.3%;
   overflow: hidden;
-  margin: 6px;
+  margin: .5%;
   padding: 10%;
   box-sizing: border-box;
 }
@@ -33,7 +33,7 @@ h1 {
 }
 
 img {
-    margin:5px;
+    margin:10px;
     position: absolute;
     top: 0;
     left: 0;
